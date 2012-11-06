@@ -11,11 +11,15 @@ require.config({
 
 require(["jquery", "views/view", "views/buttonView", "plugins/button"], 
 
-	function($, v, bv) {
+	function($, ButtonView) {
 			
-		$('body #1').button(v, bv, {
+		$('body #1').button(ButtonView, {
 			string: 'Big Button',
-			layout: { top: 100, left: 100 }
+			layout: { top: 100, left: 100 },
+			gradient: {
+				bool: 'YES',
+				boxShadow: 'YES'
+			}
 		});
 
 	}

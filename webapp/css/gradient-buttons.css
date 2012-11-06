@@ -1,0 +1,90 @@
+/* gradient-buttons.scss */
+.casual-games {
+  text-decoration: none;
+  font: bold 13px 'Tahoma',Arial,sans-serif;
+  /*Change the em value to scale the button*/
+  display: inline-block; }
+  .casual-games.shadow {
+    /*box-shadow: 0 0 .05em rgba(0,0,0,0.4);*/
+    box-shadow: 2px 2px 3px #333333;
+    -moz-box-shadow: 2px 2px 3px #333333;
+    -webkit-box-shadow: 2px 2px 3px #333333; }
+  .casual-games.rounded {
+    border-radius: 1em 1em 1em 1em;
+    -moz-border-radius: 1em 1em 1em 1em;
+    -bwebkit-border-radius: 1em 1em 1em 1em; }
+  .casual-games.text-shadow {
+    /*text-shadow: 0 1px 0 rgba(0,0,0,0.4);*/
+    text-shadow: 0px 1px 1px #333;
+    -moz-text-shadow: 0px 1px 1px #333;
+    -webkit-text-shadow: 0px 1px 1px #333; }
+  .casual-games.pattern {
+    /* The background pattern **** Does Not Work In IE 7, 8 **** */
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(0, 0, 0, 0.05)), color-stop(0.25, transparent), to(transparent)), -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(0, 0, 0, 0.05)), color-stop(0.25, transparent), to(transparent)), -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(0, 0, 0, 0.05))), -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(0, 0, 0, 0.05)));
+    background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent), -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent), -moz-linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%), -moz-linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%);
+    /* Pattern settings **** Does Not Work In IE 7, 8 **** */
+    background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    -webkit-background-size: 3px 3px; }
+  .casual-games.buttons {
+    margin-bottom: 15px;
+    width: 90px;
+    /* Need to adjust for IE, not quite fitting*/
+    text-align: center;
+    display: block;
+    padding: 4px 5px; }
+    .casual-games.buttons:hover {
+      text-decoration: underline; }
+    .casual-games.buttons:active {
+     		/* When pressed, move it down 1px 
+    		 	position: relative;
+     		top: 1px; */ }
+    .casual-games.buttons.orange {
+      color: #fff;
+      border: 1px solid #fe762b;
+      /* Fallback style */
+      /* border: 1px solid rgba(0, 0, 0, 0.3); Adds Shadow */
+      background: #fe762b;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffb353), to(#fe762b));
+      background: -moz-linear-gradient(-90deg, #ffb353, #fe762b);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffb353', endColorstr='#fe762b');
+      			/*&:hover{
+      				background: #ffb353;
+          			background: -webkit-gradient(linear, left top, left bottom, from(#fe762b), to(#ffb353) );
+          			background: -moz-linear-gradient(-90deg, #fe762b, #ffb353);
+          			filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#fe762b', endColorstr='#ffb353');
+      			}
+      			
+      			&:active{
+      				background: #fe762b;
+      			}*/ }
+    .casual-games.buttons.grey {
+      color: #333;
+      border: 1px solid #cbcbcb;
+      /* Fallback style */
+      /* border: 1px solid rgba(0, 0, 0, 0.3); Adds Shadow */
+      background: #cbcbcb;
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cbcbcb));
+      background: -moz-linear-gradient(-90deg, white, #cbcbcb);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#cbcbcb');
+      			/*&:hover{
+      				background: #ffffff;
+          			background: -webkit-gradient(linear, left top, left bottom, from(#cbcbcb), to(#ffffff) );
+          			background: -moz-linear-gradient(-90deg, #cbcbcb, #ffffff);
+          			filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cbcbcb', endColorstr='#ffffff');
+      			}
+      			
+      			&:active{
+      				background: #cbcbcb;
+      			}*/ }
+  .casual-games.header-bar {
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding: 0.5em 1.0em; }
+    .casual-games.header-bar.blue {
+      color: #fff;
+      background: #0f83b0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#15a9ca), to(#0f83b0));
+      background: -moz-linear-gradient(-90deg, #15a9ca, #0f83b0);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#15a9ca', endColorstr='#0f83b0'); }

@@ -1,5 +1,6 @@
-$.fn.button = function(View, ButtonView, options){
-	var content = $(this), defaults, opts, extendClass;
+$.fn.button = function(ButtonView, options){
+	
+	var content = $(this), defaults, opts, boundButtonPlugin;
 
 	defaults = {
 		id : content.selector,
@@ -8,7 +9,9 @@ $.fn.button = function(View, ButtonView, options){
 
 	opts = $.extend(true, defaults, options);
 
-	extendClass = $.extend(true, ButtonView, opts); 
-
-	View.render(extendClass);
+	boundButtonPlugin = $.extend(true, ButtonView, opts); 
+	
+	ButtonView.render(boundButtonPlugin);
+	
+	//console.log('boundButtonPlugin : ',boundButtonPlugin);
 };

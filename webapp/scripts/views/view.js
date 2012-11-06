@@ -26,10 +26,11 @@ define(['../core'],
 				$(id).text(string).attr('style',lo).css('background',content.backgroundColor).css('color',content.fontColor);
 
 			}
-		}
+		},
+		boundViewClass = $.extend( true, View, Core );
 		
-		console.log($.extend( true, View, Core ));
+		//console.log('View Class : ',boundViewClass);
 		
-		return $.extend( true, View, Core );
+		return boundViewClass;
 
 });
